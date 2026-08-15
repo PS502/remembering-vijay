@@ -7,7 +7,7 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Noto+Sans+Gujarati:wght@300;400;500;600&family=Rozha+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Noto+Sans+Gujarati:wght@300;400;500;600&family=Rozha+One&family=Yatra+One&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -36,7 +36,7 @@
 
     .hero { text-align: center; margin-bottom: 40px; }
     .sacred-header {
-      font-family: 'Rozha One', serif;
+      font-family: 'Rozha One', 'Yatra One', serif;
       font-size: 1.6rem;
       color: var(--accent-kesari);
       letter-spacing: 2px;
@@ -64,7 +64,13 @@
       border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);
       background: rgba(234, 220, 201, 0.15);
     }
-    .shloka-box .sanskrit { font-family: 'Rozha One', serif; font-size: 1.35rem; color: var(--accent-kesari); line-height: 1.6; }
+    .shloka-box .sanskrit { 
+      font-family: 'Rozha One', 'Yatra One', serif; 
+      font-size: 1.35rem; 
+      color: var(--accent-kesari); 
+      line-height: 1.7; 
+      letter-spacing: 0.5px;
+    }
 
     section { margin-bottom: 55px; }
     h2 {
@@ -105,26 +111,37 @@
     .map-link:hover { text-decoration: underline; }
 
     .gallery-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 12px; margin-top: 15px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 20px;
     }
     .gallery-item {
-      height: 190px; border-radius: 4px; overflow: hidden;
-      border: 1px solid var(--border-subtle); background: #eee;
+      height: 220px;
+      border-radius: 6px;
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      background: #eee;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
     }
-    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
     .gallery-item img:hover { transform: scale(1.03); }
 
     .btn-action {
       display: inline-block; background: var(--bg-card); color: var(--accent-kesari);
       border: 1px solid var(--accent-kesari); padding: 12px 24px; border-radius: 4px;
-      font-size: 0.95rem; text-decoration: none; font-weight: 500; margin-top: 18px;
+      font-size: 0.95rem; text-decoration: none; font-weight: 500; margin-top: 20px;
       transition: all 0.2s ease;
     }
     .btn-action:hover { background: var(--accent-kesari); color: #fff; }
 
     footer { text-align: center; font-size: 0.85rem; color: var(--text-muted); padding-top: 30px; border-top: 1px solid var(--border-subtle); }
-    .pranam { font-family: 'Rozha One', serif; color: var(--accent-kesari); margin-bottom: 8px; font-size: 1.1rem; }
+    .pranam { font-family: 'Noto Sans Gujarati', sans-serif; color: var(--accent-kesari); margin-bottom: 8px; font-size: 1.1rem; font-weight: 600; }
   </style>
 </head>
 <body>
@@ -142,8 +159,8 @@
 
     <div class="shloka-box">
       <div class="sanskrit">
-        ॐ त्र्यम्बकं यजामहे सुगन्धिं पुष्टिवર્ધનમ્ ।<br>
-        उર્વારુકમિવ બन्धનાન્મૃત્યોર્મુક્ષીય મામૃતાત્ ॥
+        ॐ त्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम् ।<br>
+        उर्वारुकमिव बन्धनान्मृत्योर्मुक्षीय मामृतात् ॥
       </div>
     </div>
 
@@ -188,9 +205,13 @@
     <section style="text-align: center;">
       <h2>Cherished Moments</h2>
       <div class="gallery-grid">
-        <div class="gallery-item"><img src="photo1.jpg" alt="Memory 1" /></div>
-        <div class="gallery-item"><img src="photo2.jpg" alt="Memory 2" /></div>
-        <div class="gallery-item"><img src="photo3.jpg" alt="Memory 3" /></div>
+        <div class="gallery-item"><img src="photo1.jpg" alt="Vijay in the car with Khushi" /></div>
+        <div class="gallery-item"><img src="photo2.jpg" alt="Vijay and Asita sharing a laugh" /></div>
+        <div class="gallery-item"><img src="photo3.jpg" alt="Vijay with Asita and Khushi" /></div>
+        <div class="gallery-item"><img src="photo4.jpg" alt="Vijay and Asita in the flower gardens" /></div>
+        <div class="gallery-item"><img src="photo5.jpg" alt="Khushi's graduation celebration" /></div>
+        <div class="gallery-item"><img src="photo6.jpg" alt="Vijay and Asita by the waterfront" /></div>
+        <div class="gallery-item"><img src="photo7.jpg" alt="Family gathering outdoors" /></div>
       </div>
       <a href="https://forms.gle/ouHWMBBE2TQskJwB9" target="_blank" rel="noopener noreferrer" class="btn-action">
         📷 Share / Upload Photos
