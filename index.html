@@ -54,7 +54,14 @@
       background: var(--bg-card);
       box-shadow: 0 4px 20px rgba(0,0,0,0.03);
     }
-    .portrait { width: 100%; height: 100%; object-fit: cover; object-position: center top; border-radius: 50%; }
+    .portrait { 
+      width: 100%; 
+      height: 100%; 
+      object-fit: cover; 
+      object-position: center 20%; 
+      transform: scale(1.18);
+      border-radius: 50%; 
+    }
 
     h1 {
       font-family: 'Cormorant Garamond', serif;
@@ -155,7 +162,7 @@
       margin-top: 20px;
     }
     .gallery-item {
-      height: 220px;
+      height: 230px;
       border-radius: 6px;
       overflow: hidden;
       border: 1px solid var(--border-subtle);
@@ -167,22 +174,27 @@
       height: 100%;
       object-fit: cover;
       object-position: center 20%;
+      transform: scale(1.15);
       transition: transform 0.3s ease;
     }
-    .gallery-item img:hover { transform: scale(1.03); }
+    .gallery-item img:hover { transform: scale(1.2); }
 
     /* Custom photo treatments */
     .gallery-item img.photo-contain {
       object-fit: contain;
+      transform: scale(1);
       background-color: #f3efe9;
+    }
+    .gallery-item img.photo-contain:hover {
+      transform: scale(1.03);
     }
 
     .gallery-item img.zoom-people {
-      object-position: center 25%;
-      transform: scale(1.3);
+      object-position: center 20%;
+      transform: scale(1.45);
     }
     .gallery-item img.zoom-people:hover {
-      transform: scale(1.35);
+      transform: scale(1.5);
     }
 
     .btn-action {
@@ -250,12 +262,11 @@
       <div class="gujarati-section">
         <p>13 ઑગસ્ટ, 2026ના રોજ અમે વિજય સરવૈયાને ગુમાવ્યા. આ દુઃખને શબ્દોમાં કહેવું સહેલું નથી, પણ તેમની સાથે વિતાવેલી જિંદગી અને તેમણે આપેલો પ્રેમ યાદ કરીએ ત્યારે દિલ આભારથી ભરાઈ જાય છે.</p>
         
-        <p>મુંબઈમાં જન્મેલા વિજય હંમેશાં જાણવા માંગતા કે કોઈ વસ્તુ કેવી રીતે ચાલે છે. Mechanical engineering ભણ્યા અને ગાડીઓ સાથેનો એમનો પ્રેમ જિંદગીભર રહ્યો. ગાડીનું bonnet ખુલ્યું હોય અને વિજય એની અંદર કંઈ જોતા હોય, સમજતા હોય કે પોતાના હાથે કંઈ ઠીક કરતા હોય — આ એમના માટે કામ કરતાં વધારે એક શોખ હતો.</p>
+        <p>મુંબઈમાં જન્મેલા વિજય હંમેશાં જાણવા માંગતા કે કોઈ વસ્તુ કેવી રીતે ચાલે છે. Mechanical engineering ભણ્યા અને ગાડીઓ સાથેનો એમનો પ્રેમ જિંદગીભર રહ્યો. ગાડીનું bonnet khulyu હોય અને વિજય એની અંદર કંઈ જોતા હોય, સમજતા હોય કે પોતાના હાથે કંઈ ઠીક કરતા હોય — આ એમના માટે કામ કરતાં વધારે એક શોખ હતો.</p>
         
         <p>એવી જ ઝીણવટ એમના professional જીવનમાં પણ હતી. એક કુશળ Gemologist તરીકે એમણે Antwerp, Mumbai અને New Yorkમાં ઘણાં વર્ષો સુધી કામ કર્યું. હીરા અને રત્નોની એમની સમજ ઘણી ઊંડી હતી, અને પોતાના કામ પર એમને ખૂબ ગર્વ હતો.</p>
         
         <p>પણ કામ અને સફળતા કરતાં પણ એમના માટે ઘર અને પરિવાર વધારે મહત્વનાં હતાં. વિજયને ખુશ કરવા માટે બહુ કંઈ જોઈતું નહોતું — seasonની સારી મીઠી કેરી, ગરમા-ગરમ બટાટા વડા, અને ઘરમાં Kishore Kumarનો અવાજ.</p>
-        
         
         <p style="margin-top: 18px; font-weight: 500;">
           તેમની પાછળ તેમની પત્ની અસિતા, પૌત્રી ખુશી, દીકરીઓ કરિશ્મા અને પૂજા, જમાઈ સમિર, અને દુનિયાભરના પરિવાર અને મિત્રો છે.
@@ -280,9 +291,8 @@
         <div class="gallery-item"><img src="photo7.jpg" alt="Vijay Sarvaiya memorial moment" /></div>
         <div class="gallery-item"><img src="photo8.jpg" alt="Vijay Sarvaiya memorial moment" class="photo-contain" /></div>
         <div class="gallery-item"><img src="photo9.jpg" alt="Vijay Sarvaiya memorial moment" class="zoom-people" /></div>
-      <div class="gallery-item"><img src="photo10.jpg" alt="Vijay Sarvaiya memorial moment" class="zoom-people" /></div>
-
-  </div>
+        <div class="gallery-item"><img src="photo10.jpg" alt="Vijay Sarvaiya memorial moment" class="zoom-people" /></div>
+      </div>
       <a href="https://forms.gle/ouHWMBBE2TQskJwB9" target="_blank" rel="noopener noreferrer" class="btn-action">
         📷 Share / Upload Photos
       </a>
