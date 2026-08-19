@@ -22,6 +22,10 @@
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
     
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       background-color: var(--bg-main);
       color: var(--text-primary);
@@ -34,7 +38,7 @@
 
     .container { max-width: 780px; margin: 0 auto; padding: 60px 0 90px; }
 
-    .hero { text-align: center; margin-bottom: 40px; }
+    .hero { text-align: center; margin-bottom: 25px; }
     .sacred-header {
       font-family: 'Rozha One', 'Yatra One', serif;
       font-size: 1.6rem;
@@ -59,8 +63,35 @@
     }
     .dates { font-size: 0.95rem; color: var(--text-muted); letter-spacing: 3px; }
 
+    /* Table of Contents / Quick Jump Nav */
+    .toc-nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      margin: 25px 0 35px;
+      padding: 12px 16px;
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .toc-link {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      transition: color 0.2s ease;
+    }
+    .toc-link:hover {
+      color: var(--accent-kesari);
+    }
+    .toc-divider {
+      color: var(--border-subtle);
+      user-select: none;
+    }
+
     .shloka-box {
-      text-align: center; margin: 40px 0 50px; padding: 28px 22px;
+      text-align: center; margin: 30px 0 50px; padding: 28px 22px;
       border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);
       background: rgba(234, 220, 201, 0.15);
     }
@@ -79,7 +110,7 @@
       letter-spacing: 1px;
     }
 
-    section { margin-bottom: 55px; }
+    section { margin-bottom: 55px; scroll-margin-top: 30px; }
     h2 {
       font-family: 'Cormorant Garamond', serif;
       font-size: 1.85rem; font-weight: 600; letter-spacing: 1.5px;
@@ -179,6 +210,19 @@
       <div class="dates">MAY 8, 1951 – AUGUST 13, 2026</div>
     </header>
 
+    <!-- Navigation / Jump Links -->
+    <nav class="toc-nav" aria-label="Page navigation">
+      <a href="#life-and-legacy" class="toc-link">Life &amp; Legacy</a>
+      <span class="toc-divider">·</span>
+      <a href="#shraddhanjali" class="toc-link">શ્રદ્ધાંજલિ</a>
+      <span class="toc-divider">·</span>
+      <a href="#photos" class="toc-link">Moments</a>
+      <span class="toc-divider">·</span>
+      <a href="#antim-sanskar" class="toc-link">Antim Sanskar</a>
+      <span class="toc-divider">·</span>
+      <a href="#tributes" class="toc-link">Tributes</a>
+    </nav>
+
     <div class="shloka-box">
       <div class="sanskrit">
         गतराधं गतप्राणं हत्वा देहं च भस्मसात् ।<br>
@@ -188,7 +232,7 @@
     </div>
 
     <!-- English Obituary -->
-    <section class="story-body">
+    <section id="life-and-legacy" class="story-body">
       <h2>Life & Legacy</h2>
       <p>With deep gratitude for his life and love, we share the passing of Vijay Sarvaiya on August 13, 2026.</p>
       <p>Born in Mumbai, Vijay had the mind of an engineer and the precision of a craftsman. He studied mechanical engineering and held a lifelong fascination with cars, loved tinkering under the hood, and took quiet pleasure in figuring out how things worked and fixing anything that broke. He brought that same patience and keen eye to his distinguished career as a master gemologist—training in Antwerp, Belgium, and practicing for decades across Mumbai and New York. He took genuine pride in his trade and knowledge of stones, yet his greatest fulfillment was always found in the simple comforts of home.</p>
@@ -201,7 +245,7 @@
     </section>
 
     <!-- Gujarati Shraddhanjali -->
-    <section>
+    <section id="shraddhanjali">
       <h2>શ્રદ્ધાંજલિ</h2>
       <div class="gujarati-section">
         <p>13 ઑગસ્ટ, 2026ના રોજ અમે વિજય સરવૈયાને ગુમાવ્યા. આ દુઃખને શબ્દોમાં કહેવું સહેલું નથી, પણ તેમની સાથે વિતાવેલી જિંદગી અને તેમણે આપેલો પ્રેમ યાદ કરીએ ત્યારે દિલ આભારથી ભરાઈ જાય છે.</p>
@@ -225,7 +269,7 @@
     </section>
 
     <!-- Media Gallery & Photo Sharing -->
-    <section style="text-align: center;">
+    <section id="photos" style="text-align: center;">
       <h2>Cherished Moments</h2>
       <div class="gallery-grid">
         <div class="gallery-item"><img src="photo1.jpg" alt="Vijay Sarvaiya memorial moment" /></div>
@@ -237,7 +281,7 @@
         <div class="gallery-item"><img src="photo7.jpg" alt="Vijay Sarvaiya memorial moment" /></div>
         <div class="gallery-item"><img src="photo8.jpg" alt="Vijay Sarvaiya memorial moment" class="photo-contain" /></div>
         <div class="gallery-item"><img src="photo9.jpg" alt="Vijay Sarvaiya memorial moment" class="zoom-people" /></div>
-
+        <div class="gallery-item"><img src="photo10.jpg" alt="Vijay Sarvaiya memorial moment" /></div>
       </div>
       <a href="https://forms.gle/ouHWMBBE2TQskJwB9" target="_blank" rel="noopener noreferrer" class="btn-action">
         📷 Share / Upload Photos
@@ -245,7 +289,7 @@
     </section>
 
     <!-- Antim Sanskar Details -->
-    <section>
+    <section id="antim-sanskar">
       <h2>Antim Sanskar</h2>
       <div class="card">
         <h3>Funeral & Cremation Rites</h3>
@@ -260,7 +304,7 @@
     </section>
 
     <!-- Tribute Wall -->
-    <section style="text-align: center;">
+    <section id="tributes" style="text-align: center;">
       <h2>Tributes & Condolences</h2>
       <p style="font-size: 0.95rem; color: var(--text-muted); max-width: 500px; margin: 0 auto 10px;">
         Share a memory, message of condolence, or prayer with the family (English, ગુજરાતી, or हिन्दी).
